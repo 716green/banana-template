@@ -1,5 +1,4 @@
-
-# 🍌 Banana Serverless
+# 🍌 Banana Serverless!
 
 This repo gives a basic framework for serving ML models in production using simple HTTP servers.
 
@@ -8,6 +7,7 @@ If you want to generalize this to deploy anything on Banana, [see the guide here
 ## Quickstart:
 
 The repo is already set up to run a basic [HuggingFace BERT](https://huggingface.co/docs/transformers/model_doc/bert) model.
+
 1. Run `pip3 install -r requirements.txt` to download dependencies.
 2. Run `python3 server.py` to start the server.
 3. Run `python3 test.py` in a different terminal session to test against it.
@@ -17,8 +17,9 @@ The repo is already set up to run a basic [HuggingFace BERT](https://huggingface
 1. Edit `app.py` to load and run your model.
 2. Make sure to test with `test.py`!
 3. When ready to deploy:
-  - edit `download.py` (or the `Dockerfile` itself) with scripts download your custom model weights at build time
-  - edit `requirements.txt` with your pip packages. Don't delete the "sanic" line, as it's a banana dependency.
+
+- edit `download.py` (or the `Dockerfile` itself) with scripts download your custom model weights at build time
+- edit `requirements.txt` with your pip packages. Don't delete the "sanic" line, as it's a banana dependency.
 
 ## Move to prod:
 
@@ -31,7 +32,9 @@ If Banana is your favorite GPU hosting provider (and we sure hope it is), read o
 # Deploy to Banana Serverless:
 
 Three steps:
+
 1. Create your own copy of this template repo. Either:
+
 - Click "[Fork](https://github.com/bananaml/serverless-template/fork)" (creates a public repo)
 - Click "[Use this Template](https://github.com/bananaml/serverless-template/generate)" (creates a private or public repo)
 - Create your own repo and copy the template files into it
